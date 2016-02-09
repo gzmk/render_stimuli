@@ -34,7 +34,7 @@ for lf = 1:2
             setpref('RenderToolbox3', 'workingFolder', '/scratch/gk925/render_stimuli');
             
             % use this scene and condition file.
-            parentSceneFile = ['MeshD',bump,'G',gloss,'L',lf,'.dae']
+            parentSceneFile = ['MeshD',num2str(bump),'G',num2str(gloss),'L',num2str(lf),'.dae']
             conditionsFile = 'bumpy_fitrender_Conditions.txt';
             %     mappingsFile = ['bumpy',bump_level,'_5by5_correctCameraDistDefaultMappings.txt'];
             if lf == 1
